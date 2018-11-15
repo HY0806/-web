@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>：做一个漂亮的网页</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        width: 90%;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+      header{
+        padding-top:50px;
+        text-align:center;
+        width:100%;
+        height:500px;
+        border:1px solid white;
+        background-image: url('images/1.png') ;
+        background-size:cover;
+      }
+    /* header:hover {
+      opacity:0.5;
+      filter:alpha(opacity=50);
+      }*/
+      h1,header>p,h3{
+         color:aliceblue;
+      }
+      #form1{
+         margin:60px auto;
+         width:550px;
+         height:160px;
+         border: 1px solid white;
+       }
+      #form1>input{
+        width:150px;
+        height:30px;
+        background-color:transparent;
+      }
+      #form1>button{ width:100px;  height:37px;}
+      .banner{
+        width:100%;
+        height:400px;
+        margin-top:20px;
+        border:1px solid white;
+      }
+     li#book1{list-style-image:url(images/b1.png); }
+     li#book2{list-style-image:url(images/b2.png);}
+     li#book3{list-style-image:url(images/b3.png);}
+     li#book4{list-style-image:url(images/b4.png);}
+     h2,.p1{
+       width:100%;
+        text-align:center;
+     }
+     ul{
+       margin-left:50px;
+       }
+     li{
+       float:left;
+       width:350px;
+       height:100px;
+       margin-left:70px;
+      }
+      .nav{
+        width:100%;
+        height:500px;
+        border:1px solid white;
+        background-image: url('images/2.png') ;
+        background-size:cover;
+        padding-top:100px;
+      }
+      .navh2,.navp{
+        color:aliceblue;
+        width:250px;
+        height:100px;
+        margin-left:200px;
+      }
+      #form2{
+        margin-left:200px;
+      }
+      button{
+        width:150px;
+        height:40px;
+      }
+     .extra{
+       width:380px;
+       height:350px;
+       border:1px solid rgb(250, 247, 247);
+        border-radius: 10% 0 0 10%;
+       background-clip:content-box;
+
+     }
+     .sub{
+       float:left;
+     }
+     .extra{
+       float:right;
+     }
+     .extra1,.extra2{
+       padding-left:10px;
+       padding-right:10px;
+       width:120px;
+       height:150px;
+       float:left;
+     }
+     .extra3{
+       float:right;
+       width:90px;
+       height:150px;
+       padding-left:10px;
+       padding-right:0;
+     }
+     .extrah3{
+        margin-left:180px;
+      }
+      .extrap{
+       margin-left:13px;
+      }
+      .colomnh3{
+        color:black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+      }
+      .colomn{
+       width:700px;
+        display: flex;
+        margin:20px auto;
+        text-align:center;  
+      }
+      .content1{
+        width:700px;
+        margin: 0 auto;
+        }
+       .content1>.img8{
+        width:420px;
+        height:250px;
+        float:left;
+      
+      }
+      .content1>.img8p{
+          width:200px;
+          height:220px;
+          float:right;
+          line-height:25px;
+          padding-left:40px;
+          padding-top:20px;
+       
+          }
+      .content1>.img9p{
+          padding-top:40px;
+          margin-top:20px;
+          width:200px;
+         line-height:25px;
+          float:left;
+        
+         }
+      .content1>.img9{
+          width:420px;
+          height:250px;
+          float:right;
+          margin-top:20px;
+        
+         }
+      .content1:after{
+           content:' ';
+           display:table;
+           clear:both;
+         }
+      .content1{
+           *zoom:1;
+         }
+         .content2{
+           width:700px;
+           height:700px;
+           margin: 50px auto;
+         }
+      .personp{
+           text-align:center;
+           
+          }
+      .person>img{
+          width:340px ;
+          height:250px ;
+          float:left;
+           padding-right:8px;
+           padding-top:16px;
+         }
+      .content2.person>img:hover{
+         width:340px ;
+         height:250px ;
+         
+      }
+
+      .content3{
+           width:700px;
+           height:460px;
+           margin: 30px auto;
+         }
+      .content3>form{
+          width:340px;
+           height:400px;
+           float:left;
+           text-align:center;
+           padding-right:10px;
+           border:1px solid gray;
+         }
+      .content3>form>input{
+          width:250px;
+           height:25px;
+           padding-top:10px;
+           margin-bottom:20px;
+         
+         }
+         .content3>form>button{
+          width:260px;
+           height:30px;
+           padding-top:10px;
+           margin-left:-5px;
+           color:aliceblue;
+           background-color: black;
+           margin-top:20px;
+         }
+        .content3>form>textarea{
+         width:250px;
+         height:140px;
+         margin-left:-5px;
+        }
+      .contacts{
+           padding-left:10px;
+          width:300px;  
+           height:400px;
+           float:right;
+           }
+      .contacts>ul{
+           margin-left:-80px;
+           }
+
+      .contacts>ul>li#b14{list-style-image:url(images/14.png); }
+      .contacts>ul>li#b15{list-style-image:url(images/15.png);}
+      .contacts>ul>li#b16{list-style-image:url(images/16.png);}
+      .contacts>ul>li{     height:60px;           }
+
+      footer{
+          width:100%;
+           height:300px;
+           margin: 20px auto;
+           background-color: black;
+           color:aliceblue;
+           border:1px solid green;
+          
+            }
+      table{ 
+        margin-top:45px;
+        margin-left:30px;
+           
+            width:800px;
+            height:200px;
+            text-align: center;
+            }
+
+    </style>
+  </head>
+  <body>
+    <header href='#'>
+      <h1>Hello World</h1>
+      <p>China is speeding up strategic plan,standards,traffic rule,laws,and regulations <br/>on accident-incurred liabilities for its smart car industry.Economic information<br/> Daily resported Thursday.</p>
+      <form id='form1'>
+           <h3>CREATE YOUR ACCOUNT</h3>
+            <p>IT IS ABSOLUTELY FREE</p>
+          <input type="email" id="email" name="email" placeholder="denis@getcraftwork" autocomplete="off"> 
+          <input type="password" id="pwd" name="pwd" placeholder="create your password">
+          <button>SICN UP</button>
+      </form>
+    </header>
+    <div class="container">
+      <div class="banner">
+          <p class='p1'>BOATLOADS OF AWESOME</p>
+          <h2>Ready-made,customizable,HTML <br/>landing page sections</h2>
+          <ul>
+            <li id='book1'><strong>Mobile First</strong><br/>  All mobulz are build-first for maximun<br/>  All mobulz are build-first for maximun</li>
+            <li id='book2'><strong>Accessibility</strong> <br/>  All mobulz are build-first for maximun </li>
+            <li id='book3'><strong>Fluid Typography</strong><br/>  All mobulz are build-first for maximun </li>
+            <li id='book4'><strong>Customization </strong><br/>  All mobulz are build-first for maximun </li>
+          </ul>
+        </div> 
+      <div class="nav">
+        <div class='sub'>
+          <h2 class='navh2'>supportive policies for China's smart car</h2>
+          <p class='navp'>supportive policies for China's smart car supportive policies for China's smart carsupportive policies for China's smart car</p>
+          <form id='form2'>
+            <button class='button1'>CHECK OUT FEATURES</button> <button class='button2'>TRY PRODUCT FOR FREE</button>
+          </form>
+        </div>
+        <div class='extra'> 
+          <h3 class='extrah3'>资料</h3>
+          <p class='extrap'>这里有一些教程，文档或者事列，可以帮助你学习</p>
+          <div class='extra1'> <img src='images\b5.png'><strong>教程</strong> <p>教程是入门的捷径，请从这里开始</p></div>
+          <div class='extra2'> <img src='images\b6.png'><strong>指南</strong> <p>教程是入门的捷径，请从这里开始</p></div>
+          <div class='extra3'> <img src='images\b7.png'><strong>示例</strong> <p>教程是入门的捷径，请从这里开始</p></div>
+        </div>
+      </div> 
+        <section>
+          
+        <article class="three">
+            <h2>Try Our Awesome Products</h2>
+           <div class='colomn'> 
+            <div class='colomn1'> <h3 class='colomnh3'>singleton</h3><p>supportive policies for China's smart car supportive policies for China's smart carsupportive policies for China's smart car</p></div>
+            <div class='colomn1'><h3  class='colomnh3'>singleton</h3><p>supportive policies for China's smart car supportive policies for China's smart carsupportive policies for China's smart car</p></div>
+            <div class='colomn1'><h3  class='colomnh3'>singleton</h3><p>supportive policies for China's smart car supportive policies for China's smart carsupportive policies for China's smart car</p></div>
+           </div>     
+        </article>
+
+        <article class='content1'>
+          <img src='images\8.png' class='img8'>
+          <p class='img8p'><strong>Learn How to Improve Your Personal Business</strong> <br/> supportive policies for China's smart car supportive policies for China's smart carsupportive policies for China's smart car  </p>
+          <p class='img9p'><strong>Learn How to Improve Your Personal Business</strong> <br/>  supportive policies for China's smart car supportive policies for China's smart carsupportive policies for China's smart car   </p>
+          <img src='images\9.png' class='img9'>
+        </article>
+
+
+
+        <article class='content2'>
+         
+          <p class='personp'>  <strong>Our Awesome Crew</strong><br>our unique online teaching style makes learning easy for everyone.Whether you are tring to land a new job.bush up on your skills.</p>
+          <div class='person'> <img src='images\10.png'></div>
+          <div class='person'> <img src='images\11.png'></div>
+          <div class='person'> <img src='images\12.png'></div>
+          <div class='person'> <img src='images\13.png'></div>
+       
+        </article>
+
+
+
+
+
+        <article class='content3'>
+         <form >
+           <h4>FELL FREE TO WRITE US</h4>
+            <input type="text"  name="email"  value="E-mail" autocomplete='off' >  <br>
+            <input type="text"  name="email"  value="subject" autocomplete='off' >  <br>
+          
+           <textarea name='txt' clos='50' row='5' warp='virtual' placeholder='Message'></textarea>
+            <button>SEND</button>
+         </form>
+         <div class='contacts'>
+           <h2>Contacts</h2>
+           <P>Learn How to Improve Your Personal Business supportive policies for China's smart car supportive policies for China's smart carsupportive policies for China's smart car </P>
+           <ul>
+             <li id='b14'>360 King Street<br>Feastrvale Trevose.PA 19057</li>
+             <li id='b15'>(755)564-84-12</li>
+             <li id='b16'>yourname@mail.com</li>
+           </ul>
+          </div>
+        </article>
+      </section>
+     </div>
+    <footer>
+    
+      <table>
+        <tr>
+            <th>LEARN MORE</th>
+            <th>ABOUT US</th>
+            <th>SUPPORT</th>
+            <th> ENJOY YOUR LIFE</th>
+        </tr>
+        <tr>
+          <td>How it work?</td>
+          <td>How it work?</td>
+          <td>How it work?</td>
+          <td>How it work?</td>
+        </tr>
+        <tr>
+            <td>How it work?</td>
+            <td>How it work?</td>
+            <td>How it work?</td>
+            <td>How it work?</td>
+          </tr>
+        <tr>
+            <td>How it work?</td>
+            <td>How it work?</td>
+            <td>How it work?</td>
+            <td rowspan='3'>How it work?</td>
+          </tr>
+          <tr>
+              <td>How it work?</td>
+              <td>How it work?</td>
+              <td>How it work?</td>
+             
+            </tr>
+            <tr>
+                <td>How it work?</td>
+                <td>How it work?</td>
+                <td>How it work?</td>
+               
+              </tr>
+                   
+       
+      </table>
+    </footer>
+
+
+
+  </body>
+</html>
